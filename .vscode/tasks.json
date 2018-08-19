@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dev",
+            "type": "npm",
+            "script": "dev", 
+            "path": "users/",
+            "isBackground": true,
+            "problemMatcher": "$tsc-watch"
+        }
+    ]
+}

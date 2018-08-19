@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "orders",
+            "program": "${workspaceRoot}/orders/index.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "gateway",
+            "program": "${workspaceRoot}/gateway/index.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "users",
+            "program": "${workspaceRoot}/users/index.ts",
+            "preLaunchTask": "dev",
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceRoot}/users/dist/**/*.js"
+            ]
+        }
+
+    ],
+    "compounds": [
+        {
+            "name": "pet-store",
+            "configurations": [
+                "gateway",
+                "orders",
+                "users"
+            ]
+        }
+    ]
+}
