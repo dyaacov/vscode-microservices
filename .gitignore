@@ -1,3 +1,4 @@
 gateway/node_modules/
 orders/node_modules/
 users/node_modules/
+.DS_Store
